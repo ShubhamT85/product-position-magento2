@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Task_ProductPosition::view" title="Product Position" module="Task_ProductPosition" sortOrder="10" resource="Task_ProductPosition::view"/>
+        <add id="Task_ProductPosition::grid" title="Manage Records" module="Task_ProductPosition" sortOrder="9" parent="Task_ProductPosition::view" action="product/position" resource="Task_ProductPosition::view"/>
+    </menu>
+</config>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="editor"/>
+    <body>
+     <referenceContainer name="content">
+        <block class="Task\ProductPosition\Block\Adminhtml\Position\Edit" name="product_position_edit"/>
+    </referenceContainer>
+    <referenceContainer name="left">
+        <block class="Task\ProductPosition\Block\Adminhtml\Position\Edit\Tabs" name="product_product_edit_tabs">
+            <block class="Task\ProductPosition\Block\Adminhtml\Position\Edit\Tab\Position" name="product_productposition"/>
+            <action method="addTab">
+                <argument name="name" xsi:type="string">manageposition_section</argument>
+                <argument name="block" xsi:type="string">product_productposition</argument>
+            </action>
+        </block>
+    </referenceContainer>
+</body>
+</page>
